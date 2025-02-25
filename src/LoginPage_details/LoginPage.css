@@ -1,0 +1,125 @@
+.brand-logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 100px; /* Adjust the size as needed */
+}
+
+.login-page {
+  max-width: 400px;
+  margin: 150px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.brand-logo-container{
+    margin: 30px;
+}
+
+.login-page h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-form {
+  margin-bottom: 15px;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+.login-form a {
+  display: block;
+  margin-top: 5px;
+  text-align: right;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.phone-input {
+  position: relative;
+}
+
+.phone-input input {
+  padding-left: 48px;
+  padding-top: 11px;
+  box-sizing: border-box;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+.phone-input input::placeholder {
+  color: #999;
+}
+
+.phone-input::before {
+  content: "91+";
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: black;
+  font-size: 20px;
+}
+
+button:disabled {
+  background-color: lightgreen;
+  cursor: not-allowed;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .login-page {
+    margin: 100px 20px;
+    padding: 15px;
+  }
+
+  .phone-input input {
+    padding-left: 40px;
+    font-size: 16px;
+  }
+
+  .phone-input::before {
+    font-size: 18px;
+  }
+
+  button {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-page {
+    margin: 50px 10px;
+    padding: 10px;
+  }
+
+  .phone-input input {
+    padding-left: 35px;
+    font-size: 14px;
+  }
+
+  .phone-input::before {
+    font-size: 16px;
+  }
+
+  button {
+    padding: 6px;
+  }
+}

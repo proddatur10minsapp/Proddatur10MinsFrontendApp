@@ -1,0 +1,33 @@
+.categories-page {
+  padding: 20px;
+}
+
+#categories-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.category {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.category img {
+  width: 50px; /* Set a fixed width */
+  height: 50px; /* Set a fixed height */
+  object-fit: cover; /* Ensure the image covers the area */
+}
+
+@media (max-width: 768px) {
+  #categories-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  #categories-container {
+    grid-template-columns: 1fr;
+  }
+}
